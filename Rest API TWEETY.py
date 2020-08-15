@@ -3,11 +3,11 @@
 import tweepy  
 import time
 
-#use your own key
-access_token = "1226150405844791296-yn8Q28RBr2NLPyAuxsX8nQKO4zXDf4"  
-access_token_secret = "HAa7VPfYMfN5NyZvJNi6BFgYKMwHq5kCSpiUH31dYOd6j"  
-consumer_key = "hLmnDyuYZlQH2pet4M6by8rGW"  
-consumer_secret = "H9QEh5ZhX0sTq9dNjr0ZOtuwyAkdNHdvb9Jxe1oqlcbDYkamlS"  
+#use your own key and tokens
+access_token = " enter here" 
+access_token_secret = " enter here" 
+consumer_key = " enter here"  
+consumer_secret = " enter here"  
  
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)  
 auth.set_access_token(access_token, access_token_secret)  
@@ -92,7 +92,7 @@ except tweepy.TweepError:
 user = api.get_user(screen_name = 'theresa_may')  
 print(user.followers_count)  
 print(user.friends_count)
-
+#-----------------another way-----------------
 user = api.get_user(747807250819981312)
 print(user.followers_count)  
 print(user.friends_count)
